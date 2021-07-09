@@ -15,6 +15,7 @@ namespace DeckOfCards
             LinkedList<string> cards = new LinkedList<string>();
             LinkedList<string> players = new LinkedList<string>();
             Console.WriteLine("\n\t\t\tPrinting the entire deck\n");
+            //combining both list into a cards linked list
             for (int i = 0; i < suit.Count; i++)
             {
                 foreach (var mem in rank)
@@ -24,6 +25,7 @@ namespace DeckOfCards
                 }
                 Console.WriteLine("\n");
             }
+            //For storing player and his cards at one place
             Dictionary<string, LinkedList<string>> playersWithCards = new Dictionary<string, LinkedList<string>>();
             int player = 1;
             Random random = new Random();
@@ -66,7 +68,6 @@ namespace DeckOfCards
             {
                 Console.WriteLine(i);
             }
-
         }
         public void DisplayCards(LinkedList<string> gen)
         {
